@@ -4,11 +4,13 @@
              xmlns:local="clr-namespace:ChristmasProject"
              x:Class="ChristmasProject.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout BackgroundColor="LightCoral">
+        <Label Text="Please enter your Username" TextColor="White"  HorizontalOptions="Center" x:Name="lblMessage" 
+         VerticalOptions="Start" FontSize="Large"/>
+        <Entry HorizontalOptions="Center" VerticalOptions="Center" x:Name="entryUsername" Placeholder="Enter Your Company ID here"/>
+        <Button Text="Click Me" x:Name="btnChangeLabel" Clicked="btnChangeLabel_Clicked"/>
+
     </StackLayout>
 
 </ContentPage>
+
