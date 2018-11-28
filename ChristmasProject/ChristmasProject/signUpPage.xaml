@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChristmasProject.signUpPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="BlanchedAlmond">
+            <Label TextColor="Black" Text="Welcome to the sign up form!" VerticalOptions="Start" 
+                   HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
+            <Label TextColor="Black" Text=" please enter your username and password below!" 
+                   VerticalOptions="Start" HorizontalOptions="Center" FontSize="Medium" FontAttributes="Italic" />
+            <Label TextColor="red" Text="" x:Name="errorMsg" 
+                   VerticalOptions="Start" HorizontalOptions="Center"/>
+            <Entry Placeholder="Enter username here .." x:Name="newUserName"
+                   VerticalOptions="Start" HorizontalOptions="Center"/>
+            <Entry Placeholder="Enter Password here .." IsPassword="True" x:Name="newPassword"
+                   VerticalOptions="Start" HorizontalOptions="Center"/>
+            <Button Text="Sign Up!" x:Name="signUp" Clicked="signUp_Clicked"
+                    VerticalOptions="Start" HorizontalOptions="Center" BorderRadius="30" BorderWidth="2"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

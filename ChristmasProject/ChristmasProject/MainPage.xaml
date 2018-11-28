@@ -5,10 +5,19 @@
              x:Class="ChristmasProject.MainPage">
 
     <StackLayout BackgroundColor="LightCoral">
+
         <Label Text="Please enter your Username" TextColor="White"  HorizontalOptions="Center" x:Name="lblMessage" 
          VerticalOptions="Start" FontSize="Large"/>
+
         <Entry HorizontalOptions="Center" VerticalOptions="Center" x:Name="entryUsername" Placeholder="Enter Your Company ID here"/>
-        <Button Text="Click Me" x:Name="btnChangeLabel" Clicked="btnChangeLabel_Clicked"/>
+        <Entry HorizontalOptions="Center" IsPassword="True" VerticalOptions="Center" x:Name="entryPassword" 
+               Placeholder="Enter Your Company Password here" />
+
+        <Button Text="Log In" x:Name="btnChangeLabel" Clicked="btnChangeLabel_Clicked" BorderRadius="30" BorderWidth="2"  
+                HorizontalOptions="Center" VerticalOptions="Start"/>
+
+        <Button Text="Create new account" x:Name="NewAccount" Clicked="NewAccount_Clicked" BorderWidth="2"
+                HorizontalOptions="Center" VerticalOptions="Start" BorderRadius="30" />
 
     </StackLayout>
 
