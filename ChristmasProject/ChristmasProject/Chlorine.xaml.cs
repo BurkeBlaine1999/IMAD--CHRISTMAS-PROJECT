@@ -23,7 +23,7 @@ namespace ChristmasProject
             double level = double.Parse(ClLevel.Text);
 
             if (level <= 0.25 && level > 0)
-            {
+            { 
                 lblMessage.Text = "";
                 lblMessage.Text = "The Chlorine levels are extremely Low! Switch off chlorine and acid pumps and manually feed! ";
             }

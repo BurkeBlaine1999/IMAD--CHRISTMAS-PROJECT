@@ -16,11 +16,44 @@ namespace ChristmasProject
 
         //Please Enter Employee user names at bottom for login!!
 
-        private void btnChangeLabel_Clicked(object sender, EventArgs e)
+        public void btnChangeLabel_Clicked(object sender, EventArgs e)
         {
-            if (entryUsername.Text == User || entryUsername.Text == User2|| entryUsername.Text == User3|| entryUsername.Text == User4)
+            String[] userArray;
+            userArray = new String[10];
+
+            String[] passArray;
+            passArray = new String[10];
+
+         //   newUserArray[i].text
+
+            userArray[0] = "Blaine";
+            userArray[1] = "Andrew";
+            userArray[2] = "Colin";
+            userArray[3] = "Aaron";
+            userArray[4] = "Thomas";
+            userArray[5] = "Conor";
+            userArray[6] = "Ciaran";
+            userArray[7] = "Damian";
+
+            passArray[0] = "Blaine";
+            passArray[1] = "Andrew";
+            passArray[2] = "Colin";
+            passArray[3] = "Aaron";
+            passArray[4] = "Thomas";
+            passArray[5] = "Conor";
+            passArray[6] = "Ciaran";
+            passArray[7] = "Damian";
+
+            
+
+            if (entryUsername.Text == userArray[0] || entryUsername.Text == userArray[1] || entryUsername.Text == userArray[2] || entryUsername.Text == userArray[3]
+                || entryUsername.Text == userArray[4] || entryUsername.Text == userArray[5] || entryUsername.Text == userArray[6] || entryUsername.Text == userArray[7])
             {
-                Identification = true;
+                if (entryPassword.Text == passArray[0] || entryPassword.Text == passArray[1] || entryPassword.Text == passArray[2] || entryPassword.Text == passArray[3]
+                || entryPassword.Text == passArray[4] || entryPassword.Text == passArray[5] || entryPassword.Text == passArray[6] || entryPassword.Text == passArray[7])
+                {
+                    Identification = true;
+                }
 
                 if (Identification == true)
                 {
@@ -52,5 +85,8 @@ namespace ChristmasProject
         String User2 = "Guest";
         String User3 = "Manager";
         String User4 = "Admin";
+
+
+
     }
 }
