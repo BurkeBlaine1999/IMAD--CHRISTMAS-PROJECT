@@ -19,8 +19,9 @@ namespace ChristmasProject
 
         string path = @"c:\temp\MyTest.txt";
 
-    /*    public void  Main()
+     /*   public void Main(string[] args)
         {
+            string FileName = @"C:\Users\Owner\Desktop";
             using (FileStream fs = File.Create(path))
             {
                 AddText(fs, "This is some text");
@@ -36,10 +37,22 @@ namespace ChristmasProject
             }
         } */
 
+        static void WriteFile(string FileName)
+        {
+
+        }
+
+
+        static void ReadFile(string FileName)
+        {
+
+        }
+
+
         public String signUpUsername = "";
 
 
-        public  void signUp_Clicked(object sender, EventArgs e)
+        public void signUp_Clicked(object sender, EventArgs e)
         {
             String[] newUserArray;
             newUserArray = new String[10];
